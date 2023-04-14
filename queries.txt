@@ -51,3 +51,17 @@ on centro_medico.id = reporte_medico.id_centro_medico
 group by centro_medico.nombre
 order by pacientes_atendidos desc
 limit 3
+
+/* Búsqueda mensual de los medicamentos que están por vencer y/o por terminarse */
+select inventario.nombre_producto, centro_medico.nombre , inventario.cantidad_producto, inventario.capacidad_producto, 
+cast(inventario.cantidad_producto as float)/cast(inventario.capacidad_producto as float) * 100 as porcentaje_disponible,
+inventario.fecha_vencimiento
+from inventario
+join centro_medico on inventario.id_centro_medico = centro_medico.id
+where inventario.cantidad_producto <= 0.15 * inventario.capacidad_producto
+or inventario.fecha_vencimiento <= current_date + interval '30 days'
+order by inventario.fecha_vencimiento asc
+
+/* Acceso inmediato del expediente del paciente */
+select * from reporte_medico
+select * from historial
