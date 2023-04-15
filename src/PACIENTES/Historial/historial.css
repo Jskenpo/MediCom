@@ -10,8 +10,7 @@ body {
 .container {
     position: absolute;
     width: 1400px;
-    top: 60px;
-    left: 2%;
+    left: 4%;
     display: flex;
 }
 
@@ -29,7 +28,7 @@ body {
 .cardInfo {
     background-color: #023E8A;
     width: 250px;
-    min-height: 404.5px;
+    min-height: 410px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -102,7 +101,7 @@ body {
 .cardForm {
     background-color: #023E8A;
     width: 250px;
-    min-height: 404.5px;
+    min-height: 410px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -186,7 +185,7 @@ body {
 .cardHistorial {
     background-color: #023E8A;
     width: 250px;
-    min-height: 404.5px;
+    min-height: 410px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -303,3 +302,53 @@ body {
       box-shadow: -20px -20px 0px 0px #0077B6;
     }
 }
+
+
+form, input{ 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    color: #eee;
+}
+
+form {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border: none;
+    background: #03045e; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+input[type="text"] {
+    color: #eee;
+  }
+  
+
+input::placeholder {
+    color: #eee;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background: #85d6de;
+}
+
