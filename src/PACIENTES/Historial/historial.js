@@ -26,6 +26,22 @@ fetch(`http://3.22.74.121:3000/Paciente/${dpi}`)
   });
 
 
+  fetch(`http://3.22.74.121:3000/HistorialMod/${dpi}`)
+  .then(response => response.json())
+  .then(data => {
+    const paciente = data[0];
+    const divInformacion_1 = document.getElementById("id_reporte_medico");
+
+    divInformacion_1.innerHTML = `
+      <p><strong>Id_reporte_medico:</strong> ${paciente.id_reporte_medico}</p>
+    `;
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+
+
 
 
 
