@@ -9,4 +9,11 @@ robusto con un fuerte modelo de datos soportado por una base de datos normalizad
 
 -----------------------------------------------------------------------------------------------
 
+# API
+
+https://github.com/Jskenpo/MediComAPI.git
+
+
+-----------------------------------------------------------------------------------------------
+
 ![texto alternativo](Diagram_entidad_relacion.png)
