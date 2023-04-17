@@ -14,6 +14,8 @@ function enviarFormulario(formId) {
       });
       const data = await response.json();
       console.log(data);
+      form.reset();
+      alert('Los datos se han enviado correctamente');
     });
   }
   
