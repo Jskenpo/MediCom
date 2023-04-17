@@ -23,7 +23,7 @@
           <div class="cardForm">
             <h2>Nueva Visita</h2>
             <hr/>
-            <form action="/">
+            <form id="miFormilario">
               <div class="info">
                 <input type="text" name="id_reporte_medico" placeholder="ID del Reporte Medico">  
                 <input type="text" name="fecha" placeholder="Fecha">
@@ -45,5 +45,9 @@
           </div>
     </div>
     <script src="historial.js"></script>
+    <script>
+      enviarFormulario('miFormilario');
+    </script>
+    
 </body>
 </html>
