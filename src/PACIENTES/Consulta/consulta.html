@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main-block">
-      <form action="/">
+      <form id="miFormulario">
         <div class="title">
           <i class="fas fa-pencil-alt"></i> 
           <h2>Consulta del Paciente</h2>
@@ -26,5 +26,9 @@
         <button type="submit" href="/">Enviar</button>
       </form>
     </div>
+    <script src="consulta.js"></script>
+    <script>
+      enviarFormulario('miFormulario');
+    </script>
   </body>
 </html>
