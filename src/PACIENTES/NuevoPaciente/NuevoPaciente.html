@@ -14,24 +14,28 @@
         <h1>Registrar un nuevo Paciente</h1>
         <p>Si no padece de ninguna enfermedad de herencia puede dejar en blanco el espacio</p>
       </div>
-      <form action="/">
+      <form id="miFormulario">
         <div class="title">
           <i class="fas fa-pencil-alt"></i> 
           <h2>NUEVO PACIENTE</h2>
         </div>
         <div class="info">
           <input type="text" name="dpi" placeholder="DPI">  
-          <input type="text" name="name" placeholder="Full name">
+          <input type="text" name="nombre" placeholder="Full name">
           <input type="text" name="direccion" placeholder="Direccion">
-          <input type="text" name="numero" placeholder="Phone number">
+          <input type="text" name="telefono" placeholder="Phone number">
           <input type="text" name="altura" placeholder="Altura">
           <input type="text" name="masa_corporal" placeholder="Masa Corporal">
           <input type="text" name="peso" placeholder="Peso">
-          <input type="text" name="enfermedad" placeholder="Enfermedades de herencia">
+          <input type="text" name="enfermedades_herencia" placeholder="Enfermedades de herencia">
         </div>
         <button type="submit" href="/">Enviar</button>
       </form>
       <a href="../Consulta/consulta.html" class="boton">Motivo de Consulta</a>
     </div>
+    <script src="NuevoPaciente.js"></script>
+    <script>
+      enviarFormulario('miFormulario');
+    </script>
   </body>
 </html>
