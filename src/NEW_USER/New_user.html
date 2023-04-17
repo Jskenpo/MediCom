@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="New_user.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="New_user.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="main-block">
-      <div class="left-part">
-        <i class="fas fa-graduation-cap"></i>
-        <h1>Registrar un nuevo Usuario</h1>
-        <p>El nombre de usuario a ingresar debe de ser el numero de colegiado, mientras que todos los demas datos se llenan tal y como se piden</p>
-      </div>
-      <form action="/">
-        <div class="title">
-          <i class="fas fa-pencil-alt"></i> 
-          <h2>NUEVO USUARIO</h2>
-        </div>
-        <div class="info">
-          <input type="Usuario" name="name" placeholder="Usuario">  
-          <input class="fname" type="text" name="name" placeholder="Full name">
-          <input type="Direccion" name="name" placeholder="Direccion">
-          <input type="text" name="name" placeholder="Email">
-          <input type="text" name="name" placeholder="Phone number">
-          <input type="Id_Centro_Medico" name="name" placeholder="ID lugar de Trabajo">
-          <input type="password" name="name" placeholder="Password">
-          <input type="Especialidad" name="name" placeholder="Especialidad">
-        </div>
-        <button type="submit" href="/">Enviar</button>
-      </form>
+  <div class="main-block">
+    <div class="left-part">
+      <i class="fas fa-graduation-cap"></i>
+      <h1>Registrar un nuevo Usuario</h1>
+      <p>El nombre de usuario a ingresar debe de ser el numero de colegiado, mientras que todos los demas datos se
+        llenan tal y como se piden</p>
     </div>
-  </body>
+    <form action="/">
+      <div class="title">
+        <i class="fas fa-pencil-alt"></i>
+        <h2>NUEVO USUARIO</h2>
+      </div>
+      <div class="info">
+        <input type="text" name="usuario" placeholder="Usuario">
+        <input class="fname" type="text" name="nombreCompleto" placeholder="Nombre completo">
+        <input type="text" name="direccion" placeholder="Dirección">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="telefono" placeholder="Número de teléfono">
+        <input type="text" name="idCentroMedico" placeholder="ID lugar de trabajo">
+        <input type="password" name="contraseña" placeholder="Contraseña">
+        <input type="text" name="especialidad" placeholder="Especialidad">
+      </div>
+      <button type="submit" href="/">Enviar</button>
+    </form>
+  </div>
+
+  <script src="New_user.js"></script>
+</body>
+
 </html>
