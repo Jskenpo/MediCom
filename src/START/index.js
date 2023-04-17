@@ -1,10 +1,25 @@
-const myButtonContainer = document.getElementById("myButtonContainer");
-const myButton = document.getElementById("myButton");
-const myButtonContainer_1 = document.getElementById("myButtonContainer");
-const myButton_ = document.getElementById("myButton");
-const myTitle_1 = document.getElementById("myTitle");
-const myParagraph = document.getElementById("myParagraph");
+const form = document.querySelector('#login_form');
 
-const validarLogin = () => {
-    alert('Teste');
-  }
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const username = form.querySelector('#user').value;
+  const password = form.querySelector('#pass').value;
+
+  fetch('http://3.22.74.121:3000/Medico')
+    .then(response => response.json())
+    .then(data => {
+      const medicoEncontrado = data.find(medico => medico.num_colegiado === username && medico.contraseña === password);
+
+      if (medicoEncontrado) {
+        window.location.href = "../MENU/menu.html";
+      } else {
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Usuario o contraseña incorrectos';
+        form.appendChild(errorMessage);
+      }
+    })
+    .catch(error => {
+      console.error(error);
+    });
+});

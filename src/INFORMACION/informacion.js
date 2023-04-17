@@ -338,32 +338,3 @@ function getSuministros() {
             SuministrosVContainer.appendChild(SuministrosVTable);
         })
 }
-
-
-function mostrarDatosTabla() {
-    // Hacemos la llamada al API utilizando fetch
-    fetch('http://tu-api.com/datos')
-      .then(response => response.json()) // Convertimos la respuesta en un objeto JSON
-      .then(data => {
-        // Obtenemos los primeros 5 objetos del arreglo original
-        var primerosCinco = data.slice(0, 5);
-  
-        // Creamos una variable para almacenar el HTML de la tabla
-        var html = '<table><thead><tr><th>Nombre Producto</th><th>Nombre</th><th>Cantidad</th><th>Capacidad</th><th>Porcentaje Disponible</th><th>Fecha Vencimiento</th></tr></thead><tbody>';
-  
-        // Iteramos sobre los primeros 5 objetos y vamos construyendo el contenido de la tabla
-        primerosCinco.forEach(value => {
-          html += '<tr><td>' + value.nombre_producto + '</td><td>' + value.nombre + '</td><td>' + value.cantidad_producto + '</td><td>' + value.capacidad_producto + '</td><td>' + value.porcentaje_disponible + '</td><td>' + value.fecha_vencimiento + '</td></tr>';
-        });
-  
-        // Cerramos la etiqueta tbody y table
-        html += '</tbody></table>';
-  
-        // Agregamos el HTML de la tabla al div 'espacio_tabla'
-        document.getElementById('espacio_tabla').innerHTML = html;
-      })
-      .catch(error => console.error(error)); // Manejamos cualquier error que se produzca
-  }
-  
-  // Llamamos a la función para mostrar los datos en la tabla
-  mostrarDatosTabla();
