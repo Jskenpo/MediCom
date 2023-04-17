@@ -9,6 +9,8 @@ body {
 }
 
 
+
+
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');*/
 
 /* Base styling */
@@ -19,9 +21,10 @@ body {
     }
 
 
-.search__input {
+#searchInput {
         width: 35%;
         padding: 12px 24px;
+        margin-bottom: 25px;
         background-color: #FFF;
         transition: transform 250ms ease-in-out;
         font-size: 14px;
@@ -39,14 +42,14 @@ body {
         transform-style: preserve-3d;
     }
 
-.search__input::placeholder {
+#searchInput::placeholder {
             color: #FFF;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
 
-.search__input:hover,
-        .search__input:focus {
+#searchInput:hover,
+        #searchInput:focus {
             padding: 12px 0;
             outline: 0;
             border: 1px solid transparent;
@@ -65,7 +68,7 @@ body {
 }
 .container {
     position: absolute;
-    top: 1900px;
+    top: 2000px;
     left: 22%;
     transform: translate(-50%, -50%);
 }
