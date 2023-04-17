@@ -25,3 +25,41 @@ fetch(`http://3.22.74.121:3000/Paciente/${dpi}`)
     console.error(error);
   });
 
+
+
+
+
+  const informacionHistorial = document.getElementById('informacion_historial');
+
+  const myTable = document.createElement('table');
+  myTable.id = 'TableInventario';
+  
+  informacionHistorial.appendChild(myTable);
+  
+  fetch(`http://3.22.74.121:3000/HistorialMod/${dpi}`)
+    .then(response => response.json())
+    .then(data => {
+      myTable.innerHTML = `
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Seguimiento</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${data.map(registro => `
+            <tr>
+              <td>${registro.fecha}</td>
+              <td>${registro.hora}</td>
+              <td>${registro.seguimiento}</td>
+              <td>${registro.status}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    })
+    .catch(error => {
+      console.error(error);
+    });
