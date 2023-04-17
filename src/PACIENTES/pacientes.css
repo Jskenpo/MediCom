@@ -8,12 +8,6 @@ body {
     font-weight: 100;
 }
 
-
-/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');*/
-
-/* Base styling */
-
-
 .search__container {
         margin-left: 1%;
     }
@@ -65,7 +59,7 @@ body {
 }
 .container {
     position: absolute;
-    top: 42%;
+    top: 90%;
     left: 27.5%;
     transform: translate(-50%, -50%);
 }
