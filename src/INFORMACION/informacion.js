@@ -174,6 +174,7 @@ function getReporteMensual() {
         })
         .then(data =>{
             const SuministrosContainer = document.querySelector('.Respuesta_terminarse');
+            var primerosSeis = data.slice(0, 6);
 
             const SuministrosTable = document.createElement('table');
             const SuministrosTableHead = document.createElement('thead');
@@ -199,7 +200,7 @@ function getReporteMensual() {
             SuministrosHeaderRow.appendChild(porcentaje);
             SuministrosTableHead.appendChild(SuministrosHeaderRow);
         
-            data.forEach(registro => {
+            primerosSeis.forEach(registro => {
               const SuministrosRow = document.createElement('tr');
               const SuministrosName = document.createElement('td');
               const SuministrosHospital = document.createElement('td');
