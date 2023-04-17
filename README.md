@@ -9,4 +9,4 @@ robusto con un fuerte modelo de datos soportado por una base de datos normalizad
 
 -----------------------------------------------------------------------------------------------
 
-![texto alternativo](Diagram.png)
+![texto alternativo](Diagram_entidad_relacion.png)
