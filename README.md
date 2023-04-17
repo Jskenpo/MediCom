@@ -17,3 +17,8 @@ https://github.com/Jskenpo/MediComAPI.git
 -----------------------------------------------------------------------------------------------
 
 ![texto alternativo](Diagram_entidad_relacion.png)
+
+# Authors:
+**Jose Santisteban**
+**Manuel Rodas**
+**Sebastian Solorzano**
