@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(45deg, #03045e, #0096C7);
+    background: linear-gradient(45deg, #457b9d, #023e8a);
     font-family: 'Open Sans', sans-serif;
   }
   
@@ -37,7 +37,7 @@ body {
     display: flex;
     height: 725px;
     width: 1100px;
-    background-color: #03045e;
+    background-color: #1d3557;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000000a0;
   /*   margin-left: -50px; */
