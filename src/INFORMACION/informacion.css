@@ -102,8 +102,52 @@ body {
     transition: 0.6s ease-out;
   }
 
+  table {
+    width: 600px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  th, td {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    
+  }
+  th {
+    text-align: left;
+  }
+  thead th {
+    background-color: #0077B6;
+  }
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  tbody td {
+    position: relative;
+    
+  }
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
 
-  td{
+  th, td{
     text-align: center;
-    width: 200px;
+  }
+
+  #tabla-suministros-v{
+    width: 620px;
+    left: 1.5%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
   }

@@ -279,8 +279,9 @@ function getSuministros() {
         })
         .then(data =>{
             const SuministrosVContainer = document.querySelector('.Respuesta_vencer');
+            SuministrosVContainer.setAttribute("id", "tabla-suministros-v");
             var primerosCinco = data.slice(0, 5);
-
+            
             const SuministrosVTable = document.createElement('table');
             const SuministrosVTableHead = document.createElement('thead');
             const SuministrosVTableBody = document.createElement('tbody');
