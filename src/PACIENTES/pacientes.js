@@ -22,5 +22,4 @@ fetch('http://3.22.74.121:3000/Paciente')
     });
   })
   .catch(error => {
-    // Maneja cualquier error que pueda ocurrir durante la solicitud
   });
