@@ -15,17 +15,21 @@
                 <img src="https://static.vecteezy.com/system/resources/previews/005/005/840/non_2x/user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" alt="">
             </div>  
         </div>
-      <form action="/">
+      <form id="miFormulario">
         <div class="title">
           <i class="fas fa-pencil-alt"></i> 
           <h2>Cambio de Hospital</h2>
         </div>
         <div class="info">
-          <input type="text" name="id_Centro_Medico" placeholder="Id de nuevo centro medico">  
+          <input type="text" name="id_centro_medico" placeholder="Id de nuevo centro medico">  
           <input type="text" name="num_colegiado" placeholder="Id de Usuario">  
         </div>
         <button type="submit" href="/">Enviar</button>
       </form>
     </div>
+    <script src="config_usuario.js"></script>
+    <script>
+      enviarFormulario('miFormulario');
+    </script>
   </body>
 </html>
