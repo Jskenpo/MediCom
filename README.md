@@ -1,5 +1,5 @@
 # MediCom
-Control de versiones para el proyecto 2 de base de datos 1
+**Proyecto 2 --base de datos 1--**
 
 
 El proyecto contempla el uso de tecnología de Base de Datos para la modelación y creación de
